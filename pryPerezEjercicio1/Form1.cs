@@ -25,7 +25,19 @@ namespace pryPerezEjercicio1
             {
                 if (modulo == "ADM" || modulo == "COM" || modulo == "VTA")
                 {
-                    MessageBox.Show("¡Login Exitoso!");
+                    // 1. Ocultamos el formulario de Login para que no se vea
+                    this.Hide();
+
+                    // 2. Creamos el OBJETO a partir de la CLASE frmBienvenida
+                    frmBienvenida ventanaBienvenida = new frmBienvenida();
+
+                    // 3. Mostramos la nueva ventana en modo "diálogo"
+                    //    (El código se pausa aquí hasta que se cierre la ventana Bienvenida)
+                    ventanaBienvenida.ShowDialog();
+
+                    // 4. Cuando el usuario cierra la ventana de Bienvenida, el código sigue
+                    //    y cerramos el formulario de Login, terminando la aplicación.
+                    this.Close();
                 }
                 else
                 {
@@ -37,7 +49,19 @@ namespace pryPerezEjercicio1
             {
                 if (modulo == "SIST")
                 {
-                    MessageBox.Show("¡Login Exitoso!");
+                    // 1. Ocultamos el formulario de Login para que no se vea
+                    this.Hide();
+
+                    // 2. Creamos el OBJETO a partir de la CLASE frmBienvenida
+                    frmBienvenida ventanaBienvenida = new frmBienvenida();
+
+                    // 3. Mostramos la nueva ventana en modo "diálogo"
+                    //    (El código se pausa aquí hasta que se cierre la ventana Bienvenida)
+                    ventanaBienvenida.ShowDialog();
+
+                    // 4. Cuando el usuario cierra la ventana de Bienvenida, el código sigue
+                    //    y cerramos el formulario de Login, terminando la aplicación.
+                    this.Close();
                 }
                 else
                 {
@@ -49,7 +73,19 @@ namespace pryPerezEjercicio1
             {
                 if (modulo == "ADM" || modulo == "VTA")
                 {
-                    MessageBox.Show("¡Login exitoso!"); // 'M' y 'B' mayúsculas
+                    // 1. Ocultamos el formulario de Login para que no se vea
+                    this.Hide();
+
+                    // 2. Creamos el OBJETO a partir de la CLASE frmBienvenida
+                    frmBienvenida ventanaBienvenida = new frmBienvenida();
+
+                    // 3. Mostramos la nueva ventana en modo "diálogo"
+                    //    (El código se pausa aquí hasta que se cierre la ventana Bienvenida)
+                    ventanaBienvenida.ShowDialog();
+
+                    // 4. Cuando el usuario cierra la ventana de Bienvenida, el código sigue
+                    //    y cerramos el formulario de Login, terminando la aplicación.
+                    this.Close();
                 }
                 else
                 {
@@ -61,7 +97,19 @@ namespace pryPerezEjercicio1
             {
                 if (modulo == "ADM" || modulo == "SIST" || modulo == "COM" || modulo == "VTA")
                 {
-                    MessageBox.Show("¡Login exitoso!"); // Faltaba ;
+                    // 1. Ocultamos el formulario de Login para que no se vea
+                    this.Hide();
+
+                    // 2. Creamos el OBJETO a partir de la CLASE frmBienvenida
+                    frmBienvenida ventanaBienvenida = new frmBienvenida();
+
+                    // 3. Mostramos la nueva ventana en modo "diálogo"
+                    //    (El código se pausa aquí hasta que se cierre la ventana Bienvenida)
+                    ventanaBienvenida.ShowDialog();
+
+                    // 4. Cuando el usuario cierra la ventana de Bienvenida, el código sigue
+                    //    y cerramos el formulario de Login, terminando la aplicación.
+                    this.Close();
                 }
                 else
                 {
