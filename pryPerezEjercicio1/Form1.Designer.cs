@@ -126,7 +126,7 @@
             Controls.Add(btnCancelar);
             Controls.Add(btnAceptar);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Formulario login";
             ResumeLayout(false);
             PerformLayout();
         }

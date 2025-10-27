@@ -7,6 +7,8 @@ namespace pryPerezEjercicio1
             InitializeComponent();
         }
 
+        int intentosFallidos = 0;
+
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -25,6 +27,7 @@ namespace pryPerezEjercicio1
             {
                 if (modulo == "ADM" || modulo == "COM" || modulo == "VTA")
                 {
+                    intentosFallidos = 0; // ¡REINICIAMOS EL CONTADOR!
                     // 1. Ocultamos el formulario de Login para que no se vea
                     this.Hide();
 
@@ -41,7 +44,19 @@ namespace pryPerezEjercicio1
                 }
                 else
                 {
+                    // 1. Mostramos el error de siempre
                     MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado.");
+
+                    // 2. Sumamos 1 al contador
+                    intentosFallidos = intentosFallidos + 1; // O puedes usar la forma corta: intentosFallidos++;
+
+                    // 3. Verificamos si el contador ya llegó a 2
+                    if (intentosFallidos == 2)
+                    {
+                        // Si llegó a 2, mostramos un mensaje final y cerramos
+                        MessageBox.Show("Ha superado el número de intentos. La aplicación se cerrará.");
+                        this.Close();
+                    }
                 }
             }
             // ¿Es John?
@@ -49,6 +64,7 @@ namespace pryPerezEjercicio1
             {
                 if (modulo == "SIST")
                 {
+                    intentosFallidos = 0; // ¡REINICIAMOS EL CONTADOR!
                     // 1. Ocultamos el formulario de Login para que no se vea
                     this.Hide();
 
@@ -65,7 +81,19 @@ namespace pryPerezEjercicio1
                 }
                 else
                 {
+                    // 1. Mostramos el error de siempre
                     MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado.");
+
+                    // 2. Sumamos 1 al contador
+                    intentosFallidos = intentosFallidos + 1; // O puedes usar la forma corta: intentosFallidos++;
+
+                    // 3. Verificamos si el contador ya llegó a 2
+                    if (intentosFallidos == 2)
+                    {
+                        // Si llegó a 2, mostramos un mensaje final y cerramos
+                        MessageBox.Show("Ha superado el número de intentos. La aplicación se cerrará.");
+                        this.Close();
+                    }
                 }
             }
             // ¿Es Ceci? (Tu código corregido)
@@ -73,6 +101,7 @@ namespace pryPerezEjercicio1
             {
                 if (modulo == "ADM" || modulo == "VTA")
                 {
+                    intentosFallidos = 0; // ¡REINICIAMOS EL CONTADOR!
                     // 1. Ocultamos el formulario de Login para que no se vea
                     this.Hide();
 
@@ -89,7 +118,19 @@ namespace pryPerezEjercicio1
                 }
                 else
                 {
+                    // 1. Mostramos el error de siempre
                     MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado.");
+
+                    // 2. Sumamos 1 al contador
+                    intentosFallidos = intentosFallidos + 1; // O puedes usar la forma corta: intentosFallidos++;
+
+                    // 3. Verificamos si el contador ya llegó a 2
+                    if (intentosFallidos == 2)
+                    {
+                        // Si llegó a 2, mostramos un mensaje final y cerramos
+                        MessageBox.Show("Ha superado el número de intentos. La aplicación se cerrará.");
+                        this.Close();
+                    }
                 }
             }
             // ¿Es God? (Tu código corregido)
@@ -97,6 +138,7 @@ namespace pryPerezEjercicio1
             {
                 if (modulo == "ADM" || modulo == "SIST" || modulo == "COM" || modulo == "VTA")
                 {
+                    intentosFallidos = 0; // ¡REINICIAMOS EL CONTADOR!
                     // 1. Ocultamos el formulario de Login para que no se vea
                     this.Hide();
 
@@ -113,14 +155,37 @@ namespace pryPerezEjercicio1
                 }
                 else
                 {
-                    MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado."); // Faltaba ;
+                    // 1. Mostramos el error de siempre
+                    MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado.");
+
+                    // 2. Sumamos 1 al contador
+                    intentosFallidos = intentosFallidos + 1; // O puedes usar la forma corta: intentosFallidos++;
+
+                    // 3. Verificamos si el contador ya llegó a 2
+                    if (intentosFallidos == 2)
+                    {
+                        // Si llegó a 2, mostramos un mensaje final y cerramos
+                        MessageBox.Show("Ha superado el número de intentos. La aplicación se cerrará.");
+                        this.Close();
+                    }
                 }
             }
             // ¿No es NINGUNO de los anteriores?
             else
             {
-                // Este es el 'else' final que atrapa a todos los demás.
-                MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado."); // Faltaba ;
+                // 1. Mostramos el error de siempre
+                MessageBox.Show("Usuario y/o contraseña incorrectos para el módulo seleccionado.");
+
+                // 2. Sumamos 1 al contador
+                intentosFallidos = intentosFallidos + 1; // O puedes usar la forma corta: intentosFallidos++;
+
+                // 3. Verificamos si el contador ya llegó a 2
+                if (intentosFallidos == 2)
+                {
+                    // Si llegó a 2, mostramos un mensaje final y cerramos
+                    MessageBox.Show("Ha superado el número de intentos. La aplicación se cerrará.");
+                    this.Close();
+                }
             }
         }
     }
